@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: aqua;
+}
+
+/* Navbar CSS */
+
+header{
+    margin-top: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.Navbar{
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: right;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    font-size: 28px;
+    margin-right: 3px;
+    width: 3rem;
+    border-radius: 100%;
+}
+.logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.Navbar li{
+    /* display: inline-block; */
+    margin-right: 1rem;
+}
+.Navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+
+}
+.Navbar a:hover {
+    color: aqua;
+}
+header .Navbar li a.active {
+    color: aqua;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.m{
+    display: flex;
+    align-items: center;
+}
+.github i{
+    color: var(--main-color);
+    font-size: 40px;
+    margin-right:  7px;
+}
+.linkedin i{
+    color: var(--main-color);
+    font-size: 40px;
+    margin-right:  7px;
+}
+.github i:hover{
+    filter: drop-shadow(0px 15px 15px rgb(255, 255, 255));
+    transform: scaleY(1.25) scaleX(1.25);
+}
+.linkedin i:hover{
+    filter: drop-shadow(0px 15px 15px rgb(255, 255, 255));
+    transform: scaleY(1.25) scaleX(1.25);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .Navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon{
+        display: block;
+    }
+    .Navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 37vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        
+    }
+    .Navbar a{
+        display: block;
+        margin: 12px 0px;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        color: black;
+    }
+    .Navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .Navbar a.active{
+        color: var(--text-color);
+    }
+    .Navbar.open{
+        right: 2%;
+    }    
+}
+
+/* Content CSS */
+.container{
+    display: flex;
+}
+.container img {
+    margin-left: 180%;
+    margin-top: 35%;
+    padding: 2rem;
+}
+button{
+    border: 0;
+    height: 50px;
+    width: 120px;
+    border-radius: 2rem;
+    margin: 30px;
+    margin-left: 0px;
+    color: var(--text-color);
+    background-color: rgb(4, 207, 125);
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    transform: scaleX(1.25) scaleY(1.25);
+    filter: drop-shadow(0px 25px 25px rgb(120, 207, 231));
+}
+.name{
+    margin-top: 15%;
+    display: flex;
+    align-items: left;
+    margin-right: 50%;
+    margin-left: -14%;
+    padding: 2rem;
+    /* border: 3px solid white; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.name h1{
+    font-size: 420%;
+}
+.name h2{
+    font-size: 300%;
+}
+
+
+
+
+
+
+
+
+
+
+a{
+    cursor: pointer;
+}
+body{
+    background: var(--bg-color);
+    min-height: 100vh;
+    color: var(--text-color);
+}
