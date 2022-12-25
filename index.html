@@ -1,62 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence" />
-    
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/png" href="asset/img/logo.jpg">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 
     <title>Suraj Mahato</title>
 </head>
+
 <body>
     <header>
-        <a href="#" class="logo"><img src="asset/img/logo.png" alt=""><span>Welcome!</span></a>
+        <a href="#" class="logo"><img src="asset/img/logo.jpg" alt=""><span>W</span>elcome!</a>
 
 
-    <!--Navbar-->
+        <!--Navbar-->
 
         <ul class="Navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
 
         <div class="m">
-            <a href="https://github.com/suraj-mahato360" class="github"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/suraj-mahato-732a2a20b/" class="linkedin"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/suraj-mahato360" class="github" target="_blank"><i
+                    class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/suraj-mahato-732a2a20b/" class="linkedin" target="_blank"><i
+                    class='bx bxl-linkedin-square'></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-</header>
+    </header>
 
     <!-- content  -->
-    <div class="container">
-        <div class="img"><img src="asset/img/Untitled design(3).svg" alt=""></div>
-        <div class="name">
-        <h1>Suraj Mahato</h1>
-        <h2>Web Developer</h2>
-        <p>I am a student at TCET pursuing Mechanical Engineering <br>(Batch-2024)</p>
-        <div class="btn">
-            <a href="asset/Resume-3.pdf"><button>Resume</button></a>
+    <section class="rowin" id="home">
+        <div class="home">
+        <div class="content">
+            <!-- <div class="img"><img src="asset/img/Untitled design(3).svg" alt=""></div> -->
+            <div class="name">
+                <h1>Suraj Mahato</h1>
+                <h2>Web <span>Developer.</span></h2>
+                <p>React. NodeJS. Firebase.Etc</p>
+                <div class="btn">
+                    <a href="asset/Resume-3.pdf" target="_blank"><button>Resume</button></a>
+                </div>
+            </div>
+            <div class="img"><img src="asset/img/Untitled design(3).svg" alt=""></div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- About -->
+    <section class="rowin" id="about">
+        <div class="about">
+
+        <div class="about-img">
+            <img src="asset/img/20221225_111216.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h1>About <span>Me</span></h1>
+            <h4>Creative & Techie Developer!</h4>
+            <p>I am Suraj Mahato a tech enthusiast and a self taught programmer and an open minded person. Currently a
+                student in Thakur College of Engineering and Technology pursuing my bachelors in Mechanical Engineering,
+                I also have mechanical Engineering skill like designing, knowledge of Mechanical subjects and some
+                knowledge of automation. TechStack which I have used react, node.js, tailwind CSS, Bootstrap,
+                javascript, C++, HTML and CSS. Still learning new things as we need to change with this changing world.
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Blog/Articles -->
+    <section class="rowin" id="blog">
+        <div class="blog">
+        <div class="main-text">
+            <p>Read!</p>
+            <h2><span>My </span> Blog</h2>
+        </div>
+        <div class="blog-content">
+            <div class="box">
+                <div class="blog-img">
+                    <img src="asset/img/itadaki-YWY_AASpmEI-unsplash.jpg" alt="">
+                </div>
+                <h3>First Pc build</h3>
+                <p>In this blog we will see my first PC build and also I will guide you for your PC build, read full
+                    blog.</p>
+                <a href="#" class="read">Read More</a>
+            </div>
+            <div class="box">
+                <div class="blog-img">
+                    <img src="asset/img/godfrey-nyangechi-YzKdrThXLIk-unsplash.jpg" alt="">
+                </div>
+                <h3>VS Code Shortcuts</h3>
+                <p>Every programmer nowday uses VS code and it is most populer IDE but many of us don't know many
+                    shortcuts which it comes with specially beginners wory not see full blog for awesome shortcuts</p>
+                <a href="#" class="read">Read More</a>
+
+            </div>
+            <div class="box">
+                <div class="blog-img">
+                    <img src="asset/img/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="">
+                </div>
+                <h3>Coming Soon</h3>
+                <p>Stay tuned, for more upcoming blogs you can follow me on hashnode for getting my latest blogs.</p>
+                <a href="#" target="_blank" class="read">Read More</a>
             </div>
         </div>
-        
+    </section>
+
+
+    <!-- project content -->
+
+    <section class="rowin" id="project">
+        <div class="project">
+        <div class="main-text">
+            <p>Projects</p>
+            <h2><span>Latest</span> Project</h2>
+        </div>
+
+        <div class="project-content">
+            <div class="row">
+                <img src="asset/img/tastypasty.png" alt="">
+                <div class="layer">
+                    <h5>TastyPasty</h5>
+                    <p>This project is one page application in which you can search dishes according to your input
+                        ingredient</p>
+                    <a href="https://github.com/suraj-mahato360/TastyPasty" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="asset/img/Untitled design(15).png" alt="">
+                <div class="layer">
+                    <h5>Data Management</h5>
+                    <p>This project uses mongodb atlas's database and in this project we can edit data, add more data
+                        and delete data from database.</p>
+                    <a href="https://github.com/suraj-mahato360/database_project" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="asset/img/C++.png" alt="">
+                <div class="layer">
+                    <h5>C++ Mini projects</h5>
+                    <p>In this project I have created two mini-project in C++ Hotel management system and registration
+                        page</p>
+                    <a href="https://github.com/suraj-mahato360/C-plusplus-projects" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </section>
+    <!-- Contact -->
+
+    <section class="rowin" id="contact">
+        <div class="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me! </span></h2>
+            <h4>If you have any project in your mind.</h4>
+            <p>I'm a Developer - Creating attractive & responsive website and web-app.</p>
+            <div class="list">
+                <li><a href="#">surajmahto081@gmail.com</a></li>
+            </div>
+
+            <div class="contact-icons">
+                <a href="https://twitter.com/SurajMahato2002?t=VFwz9MNRT_6G5R3TEckxoA&s=09" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/suraj_mahato360/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://discord.gg/J9d9qUxf" target="_blank"><i class="bx bxl-discord-alt"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/meqwjpre" method="POST">
+                <input type="name" name="name" placeholder="Your Name.." required>
+                <input type="email" name="email" placeholder="Enter Your Email.." required>
+                <input type="" name="number" placeholder="Enter Your Mobile Number">
+                <textarea name="" id="" cols="30" rows="10" placeholder="How can I hep You"></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="foot">
+        <footer>
+            <h5>&#169;2022 by Suraj Mahato All Rights Reserved</h5>
+        </footer>
     </div>
 
 
 
 
-
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
