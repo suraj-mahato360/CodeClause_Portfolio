@@ -192,7 +192,7 @@ button:hover{
 /* About */
 
 .about{
-    padding: 10rem;
+    padding: 11rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
@@ -243,6 +243,8 @@ button:hover{
 .blog{
     background: var(--second-bg-color);
     padding: 10rem;
+    margin-top: 105px;
+
 }
 
 .main-text{
@@ -458,6 +460,7 @@ button:hover{
     align-items: center;
     gap: 2.5rem;
     padding: 110px;
+    margin-top: 105px;
 }
 .contact-text h4{
     color: var(--text-color);
@@ -646,8 +649,8 @@ span{
     }
     .content{
         padding: 5px;
-        padding-top: 205px;
-        padding-left: 53px;
+        padding-top: 25%;
+        padding-left: 5%;
     }
     .contact{
         padding: 0;
