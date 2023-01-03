@@ -36,6 +36,7 @@ header{
 header .sticky{
     border-bottom: 1px solid #ffffff1a;
 }
+
 .Navbar{
     list-style-type: none;
     font-size: 1.5rem;
@@ -48,17 +49,17 @@ header .sticky{
     color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 600;
+    /* padding: 15px; */
 }
 .logo img{
     font-size: 28px;
-    margin-right: 3px;
     width: 3rem;
-    border-radius: 100%;
+    height: 3rem;
+    border-radius: 50%;
 }
 .logo span{
     color: var(--main-color);
-    /* font-size: 1.7rem;
-    font-weight: 600; */
+    padding-left: 15px;
 }
 .Navbar li{
     /* display: inline-block; */
@@ -78,7 +79,7 @@ header .sticky{
     color: aqua;
 }
 header .Navbar li a.active {
-    color: aqua;
+    color: rgb(0, 255, 255);
 }
 .main{
     display: flex;
@@ -108,11 +109,11 @@ header .Navbar li a.active {
 }
 .github i:hover{
     filter: drop-shadow(0px 15px 15px rgb(0, 0, 0));
-    transform: scaleY(1.25) scaleX(1.25);
+    transform: scaleY(1.05) scaleX(1.05);
 }
 i:hover{
     filter: drop-shadow(0px 15px 15px rgb(0, 0, 0));
-    transform: scaleY(1.25) scaleX(1.25);
+    transform: scaleY(1.05) scaleX(1.05);
 }
 #menu-icon{
     font-size: 35px;
@@ -145,13 +146,15 @@ button{
     margin: 30px;
     margin-left: 0px;
     color: var(--text-color);
-    background-color: rgb(4, 207, 125);
+    background-color: rgb(4, 163, 207);
     font-size: large;
     font-weight: bolder;
     cursor: pointer;
 }
 button:hover{
-    transform: scale(1.1) translateY(5px);
+    /* transform: scale(1.1) translateY(5px); */
+    background: #11809f;
+    transition: .3s ease-in;
     /* filter: drop-shadow(0px 25px 25px rgb(120, 207, 231)); */
 }
 .name{
@@ -185,9 +188,9 @@ button:hover{
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.home{
+/* .home{
     background: var(--second-bg-color);
-}
+} */
 
 /* About */
 
@@ -204,20 +207,20 @@ button:hover{
     width: 100%;
     border-radius: 8px;  
 }
-.about img:hover{
+/* .about img:hover{
     transform: scale(1.01) translateY(5px);
     filter: drop-shadow(0px 15px 15px rgb(0, 0, 0));
 
     
-}
+} */
 .about-text {
     background-color: var(--second-bg-color);
     padding: 20px;
 }
-.about-text:hover{
+/* .about-text:hover{
     filter: drop-shadow(0px 15px 15px rgb(0, 0, 0));
     transform: scale(1.01) translateY(5px);
-}
+} */
 .about-text h1{
     font-size: var(--h2-font);
     line-height: 1;
@@ -228,12 +231,12 @@ button:hover{
 .about-text h4{
     font-size: 24px;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--second-text-color);
     line-height: 1.7;
     margin: 15px 0 30px;
 }
 .about-text p{
-    color: var(--text-color);
+    color: rgb(221, 215, 215);
     font-size: var(--p-font);
     line-height: 1.8;
 }
@@ -285,7 +288,7 @@ button:hover{
 .blog-img img{
     /* width: 25px; */
     /* height: 25px; */
-    max-width: 400px;
+    /* max-width: 400px; */
     height: auto;
     width: 100%;
     border-radius: 8px; 
@@ -320,11 +323,11 @@ button:hover{
     color: var(--text-color);
 }
 
-.box:hover{
+/* .box:hover{
     transform: translateY(-8px);
     cursor: pointer;
     
-}
+} */
 
 /* Projects */
 
@@ -393,7 +396,7 @@ button:hover{
 }
 .row:hover img{
     transform: scale(1.1);
-    filter:brightness(70%);
+    filter:brightness(50%);
 }
 .row:hover .layer{
     height: 100%;
@@ -443,7 +446,7 @@ button:hover{
 .contact-icons i{
     height: 45px;
     width: 45px;
-    background: var(--main-color);
+    background: rgb(5, 122, 122);
     color: var(--text-color);
     font-size: 22px;
     display: inline-flex;
@@ -503,13 +506,13 @@ span{
 .contact-form .submit{
     display: inline-block;
     font-size: 16px;
-    background: var(--main-color);
+    background: rgb(5, 122, 122);
     color: var(--text-color);
     width: 160px;
     transition: all .45s ease;
 }
 .contact-form .submit:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -588,6 +591,10 @@ span{
     #menu-icon{
         display: block;
     }
+
+    header .Navbar li a.active {
+        color: rgb(255, 255, 255);
+    }
    
     .about-img{
         text-align: center;
@@ -603,8 +610,8 @@ span{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 37vh;
-        background: var(--main-color);
+        height: 30vh;
+        background: rgb(66, 153, 153);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -633,13 +640,14 @@ span{
     .content {
         font-size: 1rem;
     }
-    /* .content img{
-        width: 20vh;
-        height: 20vh;
-    }    */
+    .content img{
+        margin-top: 30px;
+        width: 240px;
+        height: 240px;
+    }   
 
 }
-@media (max-width: 840px){
+@media (max-width: 810px){
     .img img{
         display: none;
     }
@@ -649,8 +657,14 @@ span{
     }
     .content{
         padding: 5px;
-        padding-top: 25%;
-        padding-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 25%; */
+        /* padding-left: 5%; */
+    }
+    button{
+        margin: 0;
     }
     .contact{
         padding: 0;
